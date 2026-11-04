@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>HOSPITAL BILLING SYSTEM</h1>
+        <div class="form-box">
+
+            <form id="form">
+
+                <label>Patient Name</label>
+                <input type="text" id="Name" placeholder="Enter Patient name">
+
+                <label>Patient Age</label>
+                <input type="number" id="Age" placeholder="Enter Patient Age">
+
+                <label>Patient Phone Number</label>
+                <input type="tel" id="Number" placeholder="Enter Phone Number">
+
+                <label>Doctor Name</label>
+                <input type="text" id="Doctor" placeholder="Enter Doctor Name">
+
+                <label>Consultation Fee</label>
+                <input type="number" id="fee" placeholder="Enter Consultation Fee">
+
+                <label>Number of Consultation Days</label>
+                <input type="number" id="days" placeholder="Enter Consultation Days">
+
+                <button type="submit" id="calculateBtn">Generate Bill</button>
+
+            </form>
+            <h3 id="pname"></h3>
+            <h3 id="prname"></h3>
+            <h3 id="qname"></h3>
+            <h3 id="displays"></h3>
+             <h3 id="fee"></h3>
+             <h3 id="deli"></h3>
+             <h3 id="final"></h3>
+             <h3 id="displayst"></h3>
+             <h3 id="discountl"></h3>
+             <h3 id="aditional"></h3>
+             <h3 id="ser"></h3>
+             <h3 id="finalpay"></h3>
+             <form id="forml">
+                <button type="submit">Show Last Patient</button>
+                <h4 id="lsname"></h4>
+                <h4 id="lsnamel"></h4>
+                <button type="click" id="rem">Clear Patient Data</button>
+             </form>
+        </div>
+
+    </div>
+
+    <script src="./billing.js"></script>
+
+</body>
+</html>
