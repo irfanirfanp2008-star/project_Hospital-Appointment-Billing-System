@@ -65,6 +65,17 @@ document.getElementById("form").addEventListener("submit",function(event){
 
     localStorage.setItem("name",name) 
     localStorage.setItem("number",number)
+
+    if(name>60){
+document.getElementById("great").innerHTML = ("Senior Citizen Benefit Applied")
+}else{
+document.getElementById("great").innerHTML = ("Juniour Citizen Benefit Applied")
+}
+if(finalpay>5000){
+ document.getElementById("greatl").innerHTML = ("High Consultation Expense")   
+}else{
+ document.getElementById("greatl").innerHTML = ("Medium Consultation Expense")   
+}
 })
 
 document.getElementById("forml").addEventListener("submit",function(event){
@@ -79,6 +90,7 @@ document.getElementById("rem").addEventListener("click",function(event){
     localStorage.removeItem("Customer")
     localStorage.removeItem("number")
     document.getElementById("lsname").innerHTML = ""
-     document.getElementById("lsnamel").innerHTML = ""
+    document.getElementById("lsnamel").innerHTML = ""
 
 })
+
